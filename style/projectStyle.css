@@ -166,30 +166,56 @@ h1.partySize {
 
 
 
-/*hover states */
- .quickplayButtonHover {
-    margin-top: -5%;
-   max-width: 50%;
-   display:none;
+
+.qpOption:hover  li.display-on-hover {
+    cursor: pointer;
+    transition:  1s ease-in-out;
+    display: block;
 }
 
-.hardcoreQuickplayButtonHover {
-    max-width: 50%;
-    display:none;
- }
-
- .playlistButtonHover {
-    max-width: 50%;
-    display:none;
- }
-
-
- .quickplayButton:hover {
+.qpOption:hover {
     cursor: pointer;
-    opacity:0;
-    transition: .5s ;
- }
+    transition:  0.5s ease-in-out;
+    height: 100px;
+}
 
+.qpOption {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(11, 11, 11, 0.7), rgba(34, 52, 60, 0.2), rgba(127, 192, 223, 0.1));
+    min-width: 30%;
+    height: 40px;
+    float: left;
+}
+
+li.display-on-hover{
+    padding-top: 3%;
+    padding-left: 18%;
+    display: none;
+}
+
+.checkboxGroup {
+    display: none;
+}
+
+
+.alignItems {
+  float:left;
+}
+
+li.listYay {
+    margin: 0px;
+    list-style: none;
+    float:left;
+}
+
+h2.qp {
+    text-align: left;
+    display: inline;
+}
+
+.playButtonIcon {
+    max-width:60%;
+}
 
 
 
