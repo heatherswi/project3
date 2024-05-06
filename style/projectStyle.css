@@ -1,66 +1,36 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hitmarker Text';
+    color: white;
+}
+
+p {
+    font-family: 'Hitmarker Text';
+    color: white; 
+    margin-left: 5%;
+}
+
+
 
 body {
-    background:  url("https://i.pinimg.com/736x/53/f7/a8/53f7a8d472a3bc11f946be09116a695b.jpg");
+    background: url("https://i.pinimg.com/736x/53/f7/a8/53f7a8d472a3bc11f946be09116a695b.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-   
 }
 
-.navbar-nav {
-    margin-left: auto;
-    margin-right: 0 !important;
-    
-}
-
-.navbar-brand img {
-    padding-right: 15px;
-    width:65px;
-}
-
-.nav-item{
-    margin: 0px 15px;
-}
-
-
-a.navText, li{
-    font-family: 'Hitmarker Text';
-}
-
-.navText {
-    padding-top: 40px;
-    font-size: 22px;
-    padding-bottom: 0px;
-}
 
 ul {
 list-style-type: none;
 margin-left: auto;
 padding: 0;
 vertical-align: middle;
-background-color: #333333;
-  
-  
+background-color: #333333; 
 }
+
 li {
    list-style: none;
    display: inline-block;
   }
-  
-
-li a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
- 
-  
-p, .navbar-brand {
-    font-size: 22px;
-    font-family: 'Hitmarker Text';
-  
-}
 
 .navButton {
     padding:0%;
@@ -102,7 +72,6 @@ p, .navbar-brand {
 }
 
 
-
 .listNav {
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -116,3 +85,149 @@ p, .navbar-brand {
     background-size: cover;
     z-index: 10;
 }
+
+.partyTextAlign {
+    display: inline;
+}
+.rightAlign {
+    float:right;
+   padding-right:5%;
+}
+
+h1.partyTab {
+    margin-left: 5%;
+    font-size: 20px;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+}
+
+h1.partySize {
+    font-size: 20px;
+    display: inline;
+    align-items: right;
+    justify-content: right;
+}
+
+.partyGrid {
+    padding: 5px;
+    margin-left: 70%;
+    margin-top: 5%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60%;
+    grid-template-areas: "partyTab"
+    "partyMembers";
+   
+    background-image: linear-gradient(to right, rgba(29, 29, 29, 0.2),rgba(29, 29, 29, 0.6),  rgba(11, 11, 11, 0.9), rgba(0, 0, 0, 1.2));
+    
+}
+.partyMembers {
+    padding: 5px;
+    padding-bottom: 5px;
+    margin-left: 70%;
+    margin-top:5px;
+    background-image: linear-gradient(to right, rgba(29, 29, 29, 0.2),rgba(29, 29, 29, 0.6),  rgba(11, 11, 11, 0.9), rgba(0, 0, 0, 1.2));
+}
+
+
+
+ .challengesButton {
+    max-width: 5%;
+ }
+
+ .bonusXpButton {
+    max-width: 5%; 
+ }
+
+ .challengesView {
+    max-width: 50%;
+ }
+
+ .bonusXpView {
+    max-width: 50%; 
+ }
+
+
+ 
+
+/*normal states */
+ .quickplayButton {
+    margin-top: -5%;
+   max-width: 50%;
+}
+
+.hardcoreQuickplayButton {
+    max-width: 50%;
+ }
+
+ .playlistButton {
+    max-width: 50%;
+ }
+
+
+
+/*hover states */
+ .quickplayButtonHover {
+    margin-top: -5%;
+   max-width: 50%;
+   display:none;
+}
+
+.hardcoreQuickplayButtonHover {
+    max-width: 50%;
+    display:none;
+ }
+
+ .playlistButtonHover {
+    max-width: 50%;
+    display:none;
+ }
+
+
+ .quickplayButton:hover {
+    cursor: pointer;
+    opacity:0;
+    transition: .5s ;
+ }
+
+
+
+
+
+ @media screen and (max-width: 1505px) {
+    .navHQ {
+        display: none;
+    }
+ }
+
+ 
+ @media screen and (max-width: 1200px) {
+    .navButtonStore {
+        display: none;
+    }
+ }
+
+  
+ @media screen and (max-width: 1000px) {
+    .navEvent {
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 900px) {
+    .navBattlepass {
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 800px) {
+    .navCustomize {
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .navPlay{
+        display: none;
+    }
+ }
